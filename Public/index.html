@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adotô — encontre um novo melhor amigo ou ajude um animal a encontrar um lar.">
+  <title>Adotô | Adoção responsável</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <a class="brand" href="#" data-action="home" aria-label="Adotô - início">
+        <span class="brand-mark">🐾</span><span>adotô</span>
+      </a>
+      <nav class="navigation" aria-label="Navegação principal">
+        <button class="nav-link" data-action="home">Início</button>
+        <button class="nav-link desktop-only" data-action="create">Anunciar</button>
+        <button class="nav-link desktop-only" data-action="profile">Meu perfil</button>
+        <button class="button button-primary nav-auth" data-action="login">Entrar</button>
+      </nav>
+    </header>
+
+    <main id="screen" class="container" aria-live="polite"></main>
+
+    <footer class="footer">
+      <p>Adotô · Conectando histórias, criando novos lares. 🐾</p>
+    </footer>
+    <div id="toast" class="toast" role="status" hidden></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
